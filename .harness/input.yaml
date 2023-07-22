@@ -1,0 +1,15 @@
+inputSet:
+  name: input
+  identifier: input
+  orgIdentifier: default
+  projectIdentifier: IVAN
+  pipeline:
+    identifier: starci
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
+  object Object: pipeline.properties.ci.codebase
